@@ -4,7 +4,7 @@ import {ButtonConfig} from "../../../../_metronic/helpers/components/ButtonsToRi
 import {DrivingSchoolColumns} from "./components/DrvingSchoolColumns.tsx";
 import {CommonLayout} from "../../../../_metronic/helpers/components/CommonLayout.tsx";
 import {DrivingSchoolForm} from "./components/DrivingSchoolForm.tsx";
-import {defaultDrivingSchoolData} from "./core/_models.tsx";
+import {defaultDrivingSchoolData, drivingSchoolData} from "./core/_models.tsx";
 
 
 const DrivingSchool: React.FC = () => {
@@ -36,7 +36,7 @@ const DrivingSchool: React.FC = () => {
 
     const drivingSchoolColumns = DrivingSchoolColumns({
         onEdit: (data) => {
-            // showSidebar('edit', data)
+            showSidebar('edit')
         },
         onDelete: (data) => {
             // setShowModal('delete')
@@ -53,6 +53,7 @@ const DrivingSchool: React.FC = () => {
             showSidebar={showSidebar}
             handleSaveClick={handleSaveClick}
             elemenName={'Driving School'}
+            tableData={drivingSchoolData}
             formComponent={
                 <DrivingSchoolForm onSubmit={() => {}} formData={defaultDrivingSchoolData} />
             }

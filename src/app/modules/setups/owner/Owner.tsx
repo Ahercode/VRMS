@@ -7,6 +7,7 @@ import {CommonLayout} from "../../../../_metronic/helpers/components/CommonLayou
 import {ButtonConfig} from "../../../../_metronic/helpers/components/ButtonsToRight.tsx";
 import {message} from "antd";
 import {OwnerForm} from "./components/OwnerForm.tsx";
+import {defaultOwnerData} from "./core/_models.ts";
 
 const Owner: React.FC = () => {
 
@@ -54,11 +55,9 @@ const Owner: React.FC = () => {
             showSidebar={showSidebar}
             elemenName={'Owner'}
             handleSaveClick={handleSaveClick}
+            tableData={[]}
             formComponent={
-                <OwnerForm onSubmit={() => {}} formData={{
-                    owner_id:0, first_name: '', last_name: '', email: '', phone: '', address: '',
-                    national_id: ''
-                }} />
+                <OwnerForm onSubmit={() => {}} formData={defaultOwnerData} />
             }
         />
     )

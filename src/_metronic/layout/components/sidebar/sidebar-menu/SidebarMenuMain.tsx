@@ -19,8 +19,8 @@ const SidebarMenuMain = () => {
         icon='profile-circle'
         fontIcon='bi-person'
     >
-        <SidebarMenuItem to='/crafted/account/overview' title='Overview' hasBullet={true} />
-        <SidebarMenuItem to='/crafted/account/settings' title='Settings' hasBullet={true} />
+        {/*<SidebarMenuItem to='/crafted/account/overview' title='Overview' hasBullet={true} />*/}
+        {/*<SidebarMenuItem to='/crafted/account/settings' title='Settings' hasBullet={true} />*/}
     </SidebarMenuItemWithSub>
 
       <SidebarMenuItemWithSub

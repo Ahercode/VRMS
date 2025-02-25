@@ -15,7 +15,7 @@ interface CommonLayoutProps<T> {
     elemenName: string;
     handleSaveClick: () => void;
     formComponent: ReactNode;
-    tableData: T[];
+    tableData?: T[];
 }
 
 export const CommonLayout = <T,>({ buttons, columns, sidebarViewType,

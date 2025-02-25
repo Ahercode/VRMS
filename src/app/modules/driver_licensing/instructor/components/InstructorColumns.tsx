@@ -26,11 +26,11 @@ export const InstructorColumns = (props: columnProps) => {
         },
         {
             title: 'School',
-            dataIndex: 'school_id',
+            dataIndex: 'school',
         },
         {
             title: 'Qualifications',
-            dataIndex: 'license_type',
+            dataIndex: 'qualifications',
         },
         {
             title: 'License Number',

@@ -6,7 +6,7 @@ import {InstructorColumns} from "./components/InstructorColumns.tsx";
 import {InsuranceForm} from "../../setups/insurance/components/InsuranceForm.tsx";
 import {CommonLayout} from "../../../../_metronic/helpers/components/CommonLayout.tsx";
 import {InstructorForm} from "./components/InstructorForm.tsx";
-import {defaultInstructorData} from "./core/_models.tsx";
+import {defaultInstructorData, instructorData} from "./core/_models.tsx";
 
 
 const Instructor: React.FC = () => {
@@ -54,6 +54,7 @@ const Instructor: React.FC = () => {
             showSidebar={showSidebar}
             handleSaveClick={handleSaveClick}
             elemenName={'Instructor'}
+            tableData={instructorData}
             formComponent={
                 <InstructorForm onSubmit={() => {}} formData={defaultInstructorData} />
             }
