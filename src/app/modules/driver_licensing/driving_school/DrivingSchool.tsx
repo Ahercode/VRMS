@@ -4,7 +4,7 @@ import {ButtonConfig} from "../../../../_metronic/helpers/components/ButtonsToRi
 import {DrivingSchoolColumns} from "./components/DrvingSchoolColumns.tsx";
 import {CommonLayout} from "../../../../_metronic/helpers/components/CommonLayout.tsx";
 import {DrivingSchoolForm} from "./components/DrivingSchoolForm.tsx";
-import {defaultDrivingSchoolData, drivingSchoolData} from "./core/_models.tsx";
+import {defaultDrivingSchoolData, drivingSchoolData} from "./core/_models.ts";
 
 
 const DrivingSchool: React.FC = () => {

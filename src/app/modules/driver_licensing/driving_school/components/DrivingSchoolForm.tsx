@@ -3,7 +3,7 @@
 import * as Yup from "yup";
 import {forwardRef} from "react";
 import {useFormik} from "formik";
-import {IDrivingSchoolModel} from "../core/_models.tsx";
+import {IDrivingSchoolModel} from "../core/_models.ts";
 
 const drivingSchoolSchema = Yup.object().shape({
     vehicleRegNo: Yup.string().required('Vehicle Registration Number is required'),
