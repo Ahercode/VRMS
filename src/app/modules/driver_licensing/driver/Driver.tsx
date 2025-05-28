@@ -1,12 +1,10 @@
 import {message} from "antd";
 import {useState} from "react";
 import {ButtonConfig} from "../../../../_metronic/helpers/components/ButtonsToRight.tsx";
-import {InsuranceColumns} from "../../setups/insurance/components/InsuranceColumn.tsx";
 import {DriverColumns} from "./components/DriverColumns.tsx";
-import {InsuranceForm} from "../../setups/insurance/components/InsuranceForm.tsx";
 import {CommonLayout} from "../../../../_metronic/helpers/components/CommonLayout.tsx";
 import {DriverForm} from "./components/DriverForm.tsx";
-import {defaultDriverData, driverData} from "./core/_models.tsx";
+import {defaultDriverData, driverData} from "./core/_models.ts";
 
 
 const Driver: React.FC = () => {

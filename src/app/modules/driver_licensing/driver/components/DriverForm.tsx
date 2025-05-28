@@ -3,7 +3,7 @@
 import * as Yup from "yup";
 import {forwardRef} from "react";
 import {useFormik} from "formik";
-import {IDriverModel} from "../core/_models.tsx";
+import {IDriverModel} from "../core/_models.ts";
 
 const driverSchema = Yup.object().shape({
     vehicleRegNo: Yup.string().required('Vehicle Registration Number is required'),

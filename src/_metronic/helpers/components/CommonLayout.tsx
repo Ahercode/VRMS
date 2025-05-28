@@ -16,10 +16,11 @@ interface CommonLayoutProps<T> {
     handleSaveClick: () => void;
     formComponent: ReactNode;
     tableData?: T[];
+    isDataLoading?: boolean;
 }
 
-export const CommonLayout = <T,>({ buttons, columns, sidebarViewType,
-                                     showSidebar, elemenName, formComponent, handleSaveClick, tableData }: CommonLayoutProps<T>) => {
+export const  CommonLayout = <T,>({ buttons, columns, sidebarViewType,
+                                     showSidebar, elemenName, formComponent, handleSaveClick, tableData, isDataLoading }: CommonLayoutProps<T>) => {
     return (
         <>
             <ToolbarWrapper />
@@ -39,7 +40,7 @@ export const CommonLayout = <T,>({ buttons, columns, sidebarViewType,
                             className='card card-custom shadow w-100'>
                             <div className='card-body'>
                                 <div className='table-responsive'>
-                                    <Table dataSource={tableData} columns={columns} bordered />
+                                    <Table dataSource={tableData} columns={columns} bordered loading={isDataLoading}/>
                                 </div>
                             </div>
                         </motion.div>

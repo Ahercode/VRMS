@@ -1,4 +1,4 @@
-import {IDriverModel} from "../core/_models.tsx";
+import {IDriverModel} from "../core/_models.ts";
 import {ButtonPair} from "../../../../../_metronic/helpers/components/ButtonPair.tsx";
 import {ColumnsType} from "antd/es/table";
 
